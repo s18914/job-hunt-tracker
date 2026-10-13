@@ -59,7 +59,7 @@ export default function Badge({
   }
 
   const variantStyles = {
-    default: 'bg-sky-100 text-sky-800 dark:bg-sky-900 dark:text-sky-300',
+    default: 'bg-primary-100 text-primary-800 dark:bg-primary-900 dark:text-primary-300',
     secondary: 'bg-gray-100 text-gray-800 dark:bg-gray-700 dark:text-gray-300',
     outline:
       'border border-gray-200 text-gray-800 dark:border-dark-border-medium dark:text-gray-300',

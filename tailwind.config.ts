@@ -1,5 +1,14 @@
 import type { Config } from 'tailwindcss'
 
+// Palette read from the CSS variables in app/globals.css
+const fromCssVars = (name: string) =>
+  Object.fromEntries(
+    [50, 100, 200, 300, 400, 500, 600, 700, 800, 900, 950].map((step) => [
+      step,
+      `rgb(var(--${name}-${step}) / <alpha-value>)`,
+    ])
+  )
+
 const config = {
   content: [
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
@@ -14,19 +23,8 @@ const config = {
       colors: {
         background: 'var(--background)',
         foreground: 'var(--foreground)',
-        primary: {
-          50: '#faf5ff',
-          100: '#f3e8ff',
-          200: '#e9d5ff',
-          300: '#d8b4fe',
-          400: '#c084fc',
-          500: '#a855f7',
-          600: '#9333ea',
-          700: '#7e22ce',
-          800: '#6b21a8',
-          900: '#581c87',
-          950: '#3b0764',
-        },
+        primary: fromCssVars('primary'),
+        accent: fromCssVars('accent'),
         dark: {
           base: '#121212',
           elevated: '#1A1A1A',

@@ -6,13 +6,13 @@ export default async function LandingPage() {
   const t = await getDictionary()
 
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 py-16 sm:py-24">
-      <div className="text-center">
-        {/* <div className="bg-gradient"></div>
-        <div className="bg-white"></div> */}
+    <div className="max-w-7xl mx-auto py-16 sm:py-24 relative">
+      <div className="bg-gradient"></div>
+      <div className="bg-gradient-white"></div>
+      <div className="text-center max-h-[500px] px-4 sm:px-6">
         <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-gray-900 dark:text-white tracking-tight">
           {t.home.titleStart} <br className="hidden sm:block" />
-          <span className="text-sky-600 dark:text-sky-400">
+          <span className="text-primary-600 dark:text-primary-400">
             {t.home.titleHighlight}
           </span>
         </h1>
@@ -21,7 +21,9 @@ export default async function LandingPage() {
         </p>
         <div className="mt-10">
           <Link href="/signup">
-            <Button size="lg">{t.home.cta}</Button>
+            <Button variant="gradient" size="lg">
+              {t.home.cta}
+            </Button>
           </Link>
         </div>
       </div>

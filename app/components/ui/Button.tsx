@@ -2,7 +2,13 @@ import React from 'react'
 import { cn } from '@/lib/utils'
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  variant?: 'primary' | 'secondary' | 'outline' | 'ghost' | 'danger'
+  variant?:
+    | 'gradient'
+    | 'primary'
+    | 'secondary'
+    | 'outline'
+    | 'ghost'
+    | 'danger'
   size?: 'sm' | 'md' | 'lg'
   isLoading?: boolean
 }
@@ -20,7 +26,10 @@ export default function Button({
     'font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none'
 
   const variants = {
-    primary: 'bg-sky-600 text-white hover:bg-sky-700 active:bg-sky-800',
+    // The gradient is twice as wide as the button; on hover it slides from left to right
+    gradient:
+      'bg-gradient-to-r from-primary-600 via-accent-500 to-primary-600 bg-[length:200%_100%] bg-left text-white transition-[background-position] duration-500 ease-out hover:bg-right motion-reduce:transition-none',
+    primary: 'bg-primary-600 text-white hover:bg-primary-700 active:bg-primary-800',
     secondary:
       'bg-gray-200 text-gray-900 hover:bg-gray-300 dark:bg-gray-700 dark:text-gray-100 dark:hover:bg-gray-600',
     outline:
