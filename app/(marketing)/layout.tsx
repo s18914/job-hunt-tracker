@@ -45,19 +45,19 @@ async function LocalizedMarketingLayout({
               <nav className="hidden md:flex gap-6">
                 <Link
                   href="/features"
-                  className="text-sm font-medium hover:text-purple-600"
+                  className="text-sm font-medium hover:text-sky-600"
                 >
                   {t.nav.features}
                 </Link>
                 <Link
                   href="/faq"
-                  className="text-sm font-medium hover:text-purple-600"
+                  className="text-sm font-medium hover:text-sky-600"
                 >
                   {t.nav.faq}
                 </Link>
                 <Link
                   href="/about"
-                  className="text-sm font-medium hover:text-purple-600"
+                  className="text-sm font-medium hover:text-sky-600"
                 >
                   {t.nav.about}
                 </Link>
@@ -92,7 +92,7 @@ async function LocalizedMarketingLayout({
                   <li>
                     <Link
                       href="/features"
-                      className="text-sm text-gray-600 hover:text-purple-600"
+                      className="text-sm text-gray-600 hover:text-sky-600"
                     >
                       {t.nav.features}
                     </Link>
@@ -100,7 +100,7 @@ async function LocalizedMarketingLayout({
                   <li>
                     <Link
                       href="/faq"
-                      className="text-sm text-gray-600 hover:text-purple-600"
+                      className="text-sm text-gray-600 hover:text-sky-600"
                     >
                       {t.nav.faq}
                     </Link>
@@ -115,7 +115,7 @@ async function LocalizedMarketingLayout({
                   <li>
                     <Link
                       href="/about"
-                      className="text-sm text-gray-600 hover:text-purple-600"
+                      className="text-sm text-gray-600 hover:text-sky-600"
                     >
                       {t.nav.about}
                     </Link>
@@ -125,7 +125,7 @@ async function LocalizedMarketingLayout({
                       href="https://github.com/s18914/job-hunt-tracker"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-sm text-gray-600 hover:text-purple-600"
+                      className="text-sm text-gray-600 hover:text-sky-600"
                     >
                       GitHub
                     </a>

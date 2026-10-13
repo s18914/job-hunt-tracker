@@ -109,5 +109,11 @@ export const en: Dictionary = {
     noAccount: "Don't have an account?",
     signUpTitle: 'Create a new account',
     haveAccount: 'Already have an account?',
+    email: 'Email',
+    password: 'Password',
+    confirmPassword: 'Confirm Password',
+    signInSuccess: 'Signed in successfully',
+    signUpSuccess: 'Account created successfully',
+    genericError: 'An error occurred',
   },
 }

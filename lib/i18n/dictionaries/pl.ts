@@ -106,6 +106,12 @@ export const pl = {
     noAccount: 'Nie masz konta?',
     signUpTitle: 'Utwórz nowe konto',
     haveAccount: 'Masz już konto?',
+    email: 'E-mail',
+    password: 'Hasło',
+    confirmPassword: 'Powtórz hasło',
+    signInSuccess: 'Zalogowano pomyślnie',
+    signUpSuccess: 'Konto zostało utworzone',
+    genericError: 'Wystąpił błąd',
   },
 }
 

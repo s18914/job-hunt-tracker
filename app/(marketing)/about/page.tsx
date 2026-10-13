@@ -22,7 +22,7 @@ export default async function AboutPage() {
           <h1 className="text-4xl font-bold text-gray-900 dark:text-white">
             {cv.name}
           </h1>
-          <p className="mt-1 text-xl text-purple-600 dark:text-purple-400">
+          <p className="mt-1 text-xl text-sky-600 dark:text-sky-400">
             {cv.role}
           </p>
           <p className="mt-6 leading-relaxed text-gray-600 dark:text-gray-300">
@@ -33,7 +33,7 @@ export default async function AboutPage() {
               href={cv.github}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 text-gray-600 hover:text-purple-600 dark:text-gray-300"
+              className="inline-flex items-center gap-2 text-gray-600 hover:text-sky-600 dark:text-gray-300"
             >
               <ExternalLink size={16} />
               GitHub
@@ -43,7 +43,7 @@ export default async function AboutPage() {
             {cv.stats.map((stat) => (
               <li key={stat.label}>
                 <Card className="h-full p-4">
-                  <span className="block text-2xl font-bold text-purple-600 dark:text-purple-400">
+                  <span className="block text-2xl font-bold text-sky-600 dark:text-sky-400">
                     {stat.value}
                   </span>
                   <span className="text-sm text-gray-600 dark:text-gray-300">
@@ -103,7 +103,7 @@ export default async function AboutPage() {
             href={cv.github}
             target="_blank"
             rel="noopener noreferrer"
-            className="mt-4 inline-flex items-center gap-2 text-sm text-gray-600 hover:text-purple-600 dark:text-gray-300"
+            className="mt-4 inline-flex items-center gap-2 text-sm text-gray-600 hover:text-sky-600 dark:text-gray-300"
           >
             {t.about.moreProjects}
             <ExternalLink size={14} />
@@ -121,7 +121,7 @@ export default async function AboutPage() {
                   {group.items.map((skill) => (
                     <li
                       key={skill}
-                      className="rounded-full bg-purple-50 px-3 py-1 text-sm text-purple-700 dark:bg-purple-900/30 dark:text-purple-300"
+                      className="rounded-full bg-sky-50 px-3 py-1 text-sm text-sky-700 dark:bg-sky-900/30 dark:text-sky-300"
                     >
                       {skill}
                     </li>
@@ -231,7 +231,7 @@ function ProjectCard({ project }: { project: Project }) {
                 href={link.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-1 font-medium text-purple-600 hover:text-purple-700 dark:text-purple-400 dark:hover:text-purple-300"
+                className="inline-flex items-center gap-1 font-medium text-sky-600 hover:text-sky-700 dark:text-sky-400 dark:hover:text-sky-300"
               >
                 {link.label}
                 <ExternalLink size={14} />

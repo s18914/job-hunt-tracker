@@ -59,8 +59,7 @@ export default function Badge({
   }
 
   const variantStyles = {
-    default:
-      'bg-purple-100 text-purple-800 dark:bg-purple-900 dark:text-purple-300',
+    default: 'bg-sky-100 text-sky-800 dark:bg-sky-900 dark:text-sky-300',
     secondary: 'bg-gray-100 text-gray-800 dark:bg-gray-700 dark:text-gray-300',
     outline:
       'border border-gray-200 text-gray-800 dark:border-dark-border-medium dark:text-gray-300',
@@ -78,7 +77,7 @@ export default function Badge({
       className={cn(
         'inline-flex items-center px-2.5 py-0.5 text-xs font-medium rounded-full',
         variantStyles[badgeVariant],
-        className
+        className,
       )}
       {...props}
     >

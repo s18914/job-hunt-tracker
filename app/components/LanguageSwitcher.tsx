@@ -31,8 +31,8 @@ export default function LanguageSwitcher() {
           className={cn(
             'rounded px-2 py-1 uppercase transition-colors disabled:opacity-60',
             option === locale
-              ? 'bg-purple-600 text-white'
-              : 'text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white'
+              ? 'bg-sky-600 text-white'
+              : 'text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white',
           )}
         >
           {option}
