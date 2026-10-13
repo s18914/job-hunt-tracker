@@ -29,11 +29,11 @@ export default function Button({
     // The gradient is twice as wide as the button; on hover it slides from left to right
     gradient:
       'bg-gradient-to-r from-primary-600 via-accent-500 to-primary-600 bg-[length:200%_100%] bg-left text-white transition-[background-position] duration-500 ease-out hover:bg-right motion-reduce:transition-none',
-    primary: 'bg-primary-600 text-white hover:bg-primary-700 active:bg-primary-800',
+    primary:
+      'bg-primary-600 text-white hover:bg-primary-700 active:bg-primary-800',
     secondary:
       'bg-gray-200 text-gray-900 hover:bg-gray-300 dark:bg-gray-700 dark:text-gray-100 dark:hover:bg-gray-600',
-    outline:
-      'border border-gray-300 bg-transparent hover:bg-gray-100 dark:border-dark-border-medium dark:hover:bg-gray-800 dark:hover:text-gray-100 dark:text-gray-100',
+    outline: 'border border-gray-400 bg-transparent hover:border-gray-600 ',
     ghost:
       'bg-transparent hover:bg-gray-100 dark:hover:bg-gray-800 dark:hover:text-gray-100 dark:text-gray-100',
     danger: 'bg-red-600 text-white hover:bg-red-700',

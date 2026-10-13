@@ -14,7 +14,7 @@ export default function LanguageSwitcher() {
     <div
       role="group"
       aria-label={t.nav.language}
-      className="inline-flex rounded-md border border-gray-200 p-0.5 text-xs font-medium dark:border-dark-border-default"
+      className="inline-flex rounded-md border border-gray-400 text-xs font-medium dark:border-dark-border-default"
     >
       {locales.map((option) => (
         <button

@@ -30,8 +30,10 @@ async function LocalizedMarketingLayout({
 
   return (
     <I18nProvider locale={locale} dictionary={t}>
-      <div className="flex min-h-screen flex-col">
-        <header className="border-b border-gray-200 dark:border-dark-border-subtle bg-white dark:bg-dark-base">
+      <div className="flex min-h-screen flex-col relative">
+        <div className="bg-gradient top-0 h-full max-h-[500px] absolute w-full z-[-20]"></div>
+        <div className="bg-gradient-white dark:bg-gradient-white-dark-mode  top-0 h-full max-h-[500px] absolute w-full z-[-10]"></div>
+        <header>
           <div className="container mx-auto flex h-16 items-center justify-between px-4">
             <div className="flex items-center gap-8">
               <Link
@@ -77,7 +79,7 @@ async function LocalizedMarketingLayout({
 
         <main className="flex-1">{children}</main>
 
-        <footer className="border-t border-gray-200 dark:border-dark-border-subtle bg-white dark:bg-dark-base">
+        <footer className="border-t border-gray-200 dark:border-dark-border-subtle bg-white dark:bg-[#1f1f1f]">
           <div className="container mx-auto px-4 py-8">
             <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
               <div>
@@ -133,7 +135,7 @@ async function LocalizedMarketingLayout({
                 </ul>
               </div>
             </div>
-            <div className="mt-8 border-t pt-8 text-center">
+            <div className="mt-8 border-t dark:border-dark-border-subtle pt-8 text-center">
               <p className="text-sm text-gray-600">
                 &copy; <Timestamp /> Job Hunt Tracker · Emilia Cholewicka
               </p>

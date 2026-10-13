@@ -27,10 +27,12 @@ async function LocalizedAuthLayout({
 
   return (
     <I18nProvider locale={locale} dictionary={t}>
-      <div className="relative">
+      <div className="relative isolate">
         <div className="absolute right-4 top-4">
           <LanguageSwitcher />
         </div>
+        <div className="bg-gradient top-0 h-full absolute w-full -z-20"></div>
+        <div className="bg-gradient-round-white dark:bg-gradient-round-white-dark-mode top-0 h-full absolute w-full -z-10"></div>
         {children}
       </div>
     </I18nProvider>

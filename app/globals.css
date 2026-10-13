@@ -38,7 +38,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #121212;
+    --background: #1f1f1f;
     --foreground: #ededed;
   }
 }
@@ -111,8 +111,6 @@ body {
 }
 
 .bg-gradient {
-  top: 0;
-  height: 100%;
   background-image: linear-gradient(
     90deg,
     hsla(0, 0%, 100%, 0) 5%,
@@ -120,9 +118,6 @@ body {
     rgba(2, 181, 100, 0.7) 58%,
     hsla(0, 0%, 100%, 0) 95%
   );
-  position: absolute;
-  width: 100%;
-  z-index: -20;
 }
 
 @media only screen and (max-width: 440px) {
@@ -136,16 +131,44 @@ body {
   }
 }
 
-.bg-gradient-white {
-  top: 0;
-  height: 100%;
-  background: linear-gradient(
-    1turn,
-    #fff,
-    hsla(0, 0%, 100%, 0.72) 40%,
-    hsla(0, 0%, 100%, 0.27) 90%
-  );
-  z-index: -10;
-  position: absolute;
-  width: 100%;
+/* Inside @layer so Tailwind variants work, e.g. dark:bg-gradient-white-dark-mode */
+@layer components {
+  .bg-gradient-white {
+    background: linear-gradient(
+      1turn,
+      #fff,
+      hsla(0, 0%, 100%, 0.72) 40%,
+      hsla(0, 0%, 100%, 0.27) 90%
+    );
+  }
+
+  .bg-gradient-white-dark-mode {
+    background: linear-gradient(
+      1turn,
+      #1f1f1f,
+      hsla(0, 0%, 7%, 0.72) 40%,
+      hsla(0, 0%, 8%, 0.27) 90%
+    );
+  }
+}
+
+@layer components {
+  /* Radial: the first stop is the centre, the last one the edges */
+  .bg-gradient-round-white {
+    background: radial-gradient(
+      ellipse at 50% 50%,
+      hsla(0, 0%, 100%, 0.27),
+      hsla(0, 0%, 100%, 0.63) 30%,
+      #fff 60%
+    );
+  }
+
+  .bg-gradient-round-white-dark-mode {
+    background: radial-gradient(
+      ellipse at 50% 50%,
+      hsla(0, 0%, 8%, 0.27),
+      hsla(0, 0%, 7%, 0.72) 40%,
+      #1f1f1f 90%
+    );
+  }
 }
